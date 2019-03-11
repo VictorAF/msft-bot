@@ -1,10 +1,14 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
-
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
+
+using System.Net;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace Microsoft.BotBuilderSamples
 {
@@ -42,15 +46,34 @@ namespace Microsoft.BotBuilderSamples
             // Handle Message activity type, which is the main activity type for shown within a conversational interface
             // Message activities may contain text, speech, interactive cards, and binary or unknown attachments.
             // see https://aka.ms/about-bot-activity-message to learn more about the message and other activity types
-            if (turnContext.Activity.Type == ActivityTypes.Message)
+
+            using (WebClient client = new WebClient())
             {
-                // Echo back to the user whatever they typed.
-                var responseMessage = $"You said '{turnContext.Activity.Text}'\n";
-                await turnContext.SendActivityAsync(responseMessage);
-            }
-            else
-            {
-                await turnContext.SendActivityAsync($"{turnContext.Activity.Type} event detected");
+
+                string base_url = "http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion";
+                
+                if (turnContext.Activity.Type == ActivityTypes.Message)
+                {
+                    // Echo back to the user whatever they typed.
+                    string champion = turnContext.Activity.Text;
+                    
+                    string request_url = $"{base_url}/{champion}.json";
+                    
+                    string response = client.DownloadString(request_url);
+                    
+                    dynamic champion_data = JsonConvert.DeserializeObject(response);          
+
+                    // var responseMessage = $"You said '{turnContext.Activity.Text}'\n";
+                    var responseMessage = champion_data["data"][champion]["lore"];
+                
+                    Console.WriteLine(responseMessage);
+
+                    await turnContext.SendActivityAsync($"{responseMessage}");
+                }
+                else
+                {
+                    await turnContext.SendActivityAsync($"{turnContext.Activity.Type} event detected");
+                }
             }
         }
     }

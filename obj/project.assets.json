@@ -14395,11 +14395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/EchoBot.csproj",
+      "projectUniqueName": "/home/ec2014/ra158043/Documents/mksft-bot/EchoBot.csproj",
       "projectName": "EchoBot",
-      "projectPath": "/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/EchoBot.csproj",
+      "projectPath": "/home/ec2014/ra158043/Documents/mksft-bot/EchoBot.csproj",
       "packagesPath": "/home/ec2014/ra158043/.nuget/packages/",
-      "outputPath": "/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/",
+      "outputPath": "/home/ec2014/ra158043/Documents/mksft-bot/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/home/ec2014/ra158043/Documents/dotnet-sdk-2.2.104-linux-x64/sdk/NuGetFallbackFolder"
