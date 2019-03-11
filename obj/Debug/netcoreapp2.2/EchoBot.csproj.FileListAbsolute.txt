@@ -1,0 +1,16 @@
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/appsettings.json
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/echobot.bot
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/EchoBot.deps.json
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/EchoBot.runtimeconfig.json
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/EchoBot.runtimeconfig.dev.json
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/EchoBot.dll
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/bin/Debug/netcoreapp2.2/EchoBot.pdb
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.csprojAssemblyReference.cache
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.csproj.CoreCompileInputs.cache
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.RazorAssemblyInfo.cache
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.RazorAssemblyInfo.cs
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.AssemblyInfoInputs.cache
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.AssemblyInfo.cs
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.RazorTargetAssemblyInfo.cache
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.dll
+/home/ec2014/ra158043/Documents/BotBuilder-Samples/samples/csharp_dotnetcore/02.a.echo-bot/obj/Debug/netcoreapp2.2/EchoBot.pdb
