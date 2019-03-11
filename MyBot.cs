@@ -57,14 +57,17 @@ namespace Microsoft.BotBuilderSamples
                     // Echo back to the user whatever they typed.
                     string champion = turnContext.Activity.Text;
                     
-                    string request_url = $"{base_url}/{champion}.json";
+                    string[] tokens = champion.Split(" ");
+
+                    string request_url = $"{base_url}/{tokens[0]}.json";
                     
                     string response = client.DownloadString(request_url);
+
                     
                     dynamic champion_data = JsonConvert.DeserializeObject(response);          
 
                     // var responseMessage = $"You said '{turnContext.Activity.Text}'\n";
-                    var responseMessage = champion_data["data"][champion]["lore"];
+                    var responseMessage = champion_data["data"][tokens[0]][tokens[1]];
                 
                     Console.WriteLine(responseMessage);
 
